@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Página em Java-Script</title>
+<body>
+	<h1> Servers/Tomcat v9.0 Server at localhost-config</h1>
+
+	<!-- PEGA O FOI INSERIDO NO TEXTAREA E JOGA NA VARIAVEL mostrarNome -->
+	<input type="text" id="nome" name="nome" style="border-radius: 10px; background-color: appworkspace">
+	<button onclick="mostrarNome()" style="border-radius: 10px">Mostrar Nome </button>
+
+	<!-- A FUNÇÃO mostraNome é invocado com o clique no botão -->
+	<script type="text/javascript">
+		function mostrarNome() {
+			//o Get pega por elemento sendo que document é html e jogao valor
+			// na variavel nome e depois exibe na tela com alert
+			var nome = document.getElementById("nome").value;
+			alert("Meu nome é : " + nome);
+
+		}
+	</script>
+
+</body>
+</html>
